@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+            table-layout: auto; 
+        }
+        .main {
+            width: 50%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 0px;
+        }
+        th {
+            background-color: #dcdcdc;
+        }
+        .cei-logo {
+            width: 50px;
+            margin-right: 10px; 
+        }
+        .opening {
+            font-weight: bold;
+            display: flex;
+            justify-content: center;  
+            align-items: center;      
+        }
+        .blue-text {
+            color: blue;
+        }
+        .red-text {
+            color: red;
+        }
+        .yellow-highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+        .lunch {
+            font-style: italic;
+            font-weight: bold;
+            background-color: white;
+            border-top-style: none;
+        }
+        .lun {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CEi Conference</h1>
+    <table class="main">
+        <thead>
+            <tr>
+                <th rowspan="2">Day</th>
+                <th colspan="3" style="padding: 1% 0;">Schedule</th>
+            </tr>
+            <tr>
+                <th style="padding: 1% 0;">Morning</th>
+                <td style="border-bottom-style: none; color: white;">&nbsp;</td> <!-- Could replace with 'No Event' or leave empty -->
+                <th>Afternoon</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mon</td>
+                <td>
+                    <p class="opening">
+                        <img class="cei-logo" src="https://cei.kmitl.ac.th/wp-content/uploads/2024/09/cropped-ceip-fav-1.png" alt="CEi Logo">
+                        Opening
+                    </p>
+                </td>
+                <td class="lunch" rowspan="3">
+                    <div class="lun">
+                        <p>L</p>
+                        <p>U</p>
+                        <p>N</p>
+                        <p>C</p>
+                        <p>H</p>
+                    </div>
+                </td>
+                <td>
+                    <table>
+                        <tr >
+                            <td colspan="2" style="text-align: center; padding: 5%;">Health Care</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; padding: 5%;">HTML 1</td>
+                            <td>HTML 2</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>Tue</td>
+                <td>
+                    <p class="blue-text">Smart City</p>
+                    <table style="width: 100%; height: 100%;">
+                        <tr>
+                            <td style="border-left-style: none; padding: 4%">CSS 1</td>
+                            <td style="border-right-style: none;">CSS 2</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="border-style: none;padding: 4%">Business Meeting</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <p>Posters</p>
+                    <hr style="margin: 0;">
+                    <p class="red-text">Meet Companies</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 4% 0;">Wed</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td style="padding: 10% 0;">JS 1</td>
+                            <td>JS 2</td>
+                            <td>JS 3</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="yellow-highlight">Closing</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
